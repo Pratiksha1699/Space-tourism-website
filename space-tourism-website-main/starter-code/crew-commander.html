@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<style>
+ body{
+	
+	background-image:url("assets/crew/background-crew-desktop.jpg");
+	backgound-repeat:no-repeat;
+	background-size:cover;
+  
+  }
+  
+  #glassdiv1{
+
+		background: rgba(243, 240, 236, 0.1);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(25px);
+		-webkit-backdrop-filter: blur(25px);
+		margin-top:2%;
+		float:right;
+		margin-right:-7px;
+		color:white;
+		padding:35px 60px 0px 60px;
+  }
+  #glassdiv{
+		background-color:rgba(255,255,255,0.3);
+		
+		margin-top:2%;
+		
+		
+		filter:blur(1.5px);
+		-webkit-filter:blur(1.5px);
+		color:white;
+		//padding:35px 60px 35px 60px;
+		//z-index:0;
+		
+  }
+  #glass-nav-content{
+		z-index:2;
+		position:relative;
+  }
+  #glass-nav-content > div{
+		display:inline-block;
+		padding:0% 30px 35px 30px;
+		font-family:'Barlow Condensed',sans-sarif;
+		font-size:16px;
+		text-transform:uppercase;
+		letter-spacing:2.7px;
+		background-color:rgb(0,0,0);
+		background-color:rgba(255,255,255,0.0);
+		z-index:2;
+		//border-bottom:2px solid white;
+		
+  }
+  #nav-span{
+		padding:0% 0px 32px 0px;
+		//border-bottom:3px solid white;
+  }
+  #nav-span2{
+		padding:0% 0px 16px 0px;
+		//border-bottom:3px solid white;
+  }
+  #nav-span3{
+		color:rgba(255,255,255,0.3);
+		display:inline;
+		
+  }
+  #nav-span3:hover{
+		color:rgba(255,255,255,0.7);
+		cursor:pointer;
+  }
+  #nav-span:hover{
+		border-bottom:3px solid rgba(255,255,255,0.7);
+		color:#D0D6F9;
+		cursor:pointer;
+		}
+  #nav-span2:hover{
+		border-bottom:3px solid rgba(255,255,255,0.7);
+		color:#D0D6F9;
+		cursor:pointer;
+		}
+  #info{
+		margin-top:20%;
+		float:left;
+		margin-left:10%;
+		width:35%;
+  }
+  #info-first{
+		font-family:'Barlow Condensed',sans-sarif;
+		font-size:28px;
+		text-transform:uppercase;
+		letter-spacing:4.75px;
+		display:inline-block;
+		color:rgb(208,214,249);
+  }
+  #info-centre{
+		font-family:'Bellefair',sans-sarif;
+		font-size:150px;
+		text-transform:uppercase;
+		letter-spacing:4.75px;
+		display:block;
+		color:rgb(255,255,255);
+		padding:2% 0% 2% 0%;
+  
+  }
+  #info-end{
+		display:block;
+		color:rgb(208,214,249);
+		font-family:sans-sarif;
+		font-size:20px;
+  }
+  #moon-style{
+		color:#fff;
+		font-family:'Bellefair';
+		font-size:120px;
+		text-transform:uppercase;
+  }
+  .nav1{
+		border-bottom:3px solid #fff;
+  }
+
+</style>
+<body>
+	<div style="border-bottom:1px solid #808080;width:37%;margin-left:10%;z-index:1;padding-top:6%;position:absolute;"></div>
+	<div id="glassdiv1">
+		<div id="glassdiv"></div>
+		<div id="glass-nav-content">
+		<div><span id="nav-span" onclick="redirect('Home');"><strong>00</strong> Home</span></div>
+		<div><span id="nav-span" onclick="redirect('Destination');"><strong>01</strong> Destination</span></div>
+		<div><span id="nav-span" onclick="redirect('crew');" class="nav1"><strong>02</strong> Crew</span></div>
+		<div><span id="nav-span" onclick="redirect('technology');"><strong>03</strong> Technology</span></div>
+		</div>
+	</div>
+	<div style="padding:4% 3% 3% 3%;">
+		<img src="E:\Pratiksha1699\Space-tourism-website\space-tourism-website-main\starter-code\assets\shared\logo.svg">
+	</div>
+
+	<div style="float:left;width:45%;">
+  <div style="color:white;font-size:25px;font-family:'Bellefair';padding-top:3%;padding-left:20%;text-transform:uppercase;"><span style="color:#808080;">02</span> Meet your crew</div>
+  
+  <div style="padding-top:14%;padding-left:20%;text-transform:uppercase;font-size:25px;font-family:'Bellefair';color:#808080;">
+		Commander	
+	</div>
+	<div style="color:#fff;font-size:52px;text-transform:uppercase;padding:1% 0% 1% 20%;">Douglas Hurley</div>
+	
+	 <div style="color:rgb(208,214,249);width:70%;padding-left:20%;float:left;padding-top:2%;">
+  <div style="">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+  and former NASA astronaut. He launched into space for the third time as 
+  commander of Crew Dragon Demo-2.</div>
+	
+  </div>
+  <div style="float:left;width:45%;padding:10%;">
+	<div style="display:inline-block;padding:2%;padding-left:25%;"><span id="nav-span3" style="color:white;" onclick="redirect('commander');" class="fa fa-circle"></span></div>
+	<div style="display:inline-block;padding:2%;"><span id="nav-span3" onclick="redirect('missionSpec');" class="fa fa-circle"></span></div>
+	<div style="display:inline-block;padding:2%;"><span id="nav-span3" onclick="redirect('pilot');" class="fa fa-circle"></span></div>
+	<div style="display:inline-block;padding:2%;"><span id="nav-span3" onclick="redirect('engineer');" class="fa fa-circle"></span></div>
+  
+  </div>
+  </div>
+	<div style="float:left;padding-left:10%;">
+    
+		<img width="75%" src="E:\Pratiksha1699\Space-tourism-website\space-tourism-website-main\starter-code\assets\crew\image-douglas-hurley.png">
+  
+	</div>
+	
+  </div>
+	</div>
+	</div>
+ 
+  <script>
+  document.getElementsByClassName('nav1')[0].onload = function(){document.getElementsByClassName('nav1')[0].style.borderBottom='3px solid #fff'};
+		function loadfun(){
+			document.getElementsByClassName('nav1')[0].style.borderBottom='3px solid #fff'
+		
+		}
+  function redirect(loc){
+			if(loc=='Destination'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\destination-moon.html';
+			}
+			if(loc=='crew'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\crew-commander.html';
+			}
+			if(loc=='technology'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\technology-vehicle.html';
+			}
+			if(loc=='Home'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\index.html';
+			}
+			if(loc=='moon'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\destination-moon.html';
+			}
+			if(loc=='mars'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\destination-mars.html';
+			}
+			if(loc=='europa'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\destination-europa.html';
+			}
+			if(loc=='titan'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\destination-titan.html';
+			}
+			if(loc=='commander'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\crew-commander.html';
+			}
+			if(loc=='missionSpec'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\crew-specialist.html';
+			}
+			if(loc=='pilot'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\crew-pilot.html';
+			}
+			if(loc=='engineer'){
+				window.location.href = 'E:\\Pratiksha1699\\Space-tourism-website\\space-tourism-website-main\\starter-code\\crew-engineer.html';
+			}
+		
+		}
+		
+  
+  </script>
+  
+  
+</body>
+</html>
